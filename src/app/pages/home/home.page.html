@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Reciclica</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list color="success">
+    <ion-item color="success">
+      <ion-avatar slot="start">
+        <img src="../../../assets/avatar.jpeg">
+      </ion-avatar>
+      <ion-label>
+        <h1>Pulo alves</h1>
+        <p>Gathered: <span class="money">$15,00</span></p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <app-pickup-call-card status="hold" createdAt="11/06/21" notes="We have two bags that are full, one with plastic and other with glass" updatedAt="13/06/21">
+    <ion-card-header header>
+      <ion-card-subtitle>Last pickup call</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-button color="success" fill="clear" size="full" (click)="viewPickupCalls()" footer>See all...</ion-button>
+  </app-pickup-call-card>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="success" fill="clear" (click)="createPickupCall()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
